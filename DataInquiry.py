@@ -6,8 +6,9 @@
 
 #Python line comments denoted by <#>
 
-
-
+#--------------------------------LIBRARIES-----------------------------------
+# import <libraryname> as <alias>
+import pandas as pd
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
