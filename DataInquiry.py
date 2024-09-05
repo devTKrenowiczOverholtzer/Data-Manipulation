@@ -136,6 +136,15 @@ print(wine_df.iloc[4,0])
 print("All columns, row index 4")
 print(wine_df.iloc[4,:])
 
+#Selecting a row or rows based on a condition
+print("Want all rows where the wine quality is above 5")
+print(wine_df.loc[wine_df["quality"] > 5])
+# passing in the quality column of the winedf
+# dont know why just dont use the column directly
+# locating all instances where quality > 5 is true
+# getting the entire dataframe back 
+
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
