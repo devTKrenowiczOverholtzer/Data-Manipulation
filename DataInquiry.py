@@ -71,6 +71,8 @@ print(quality_list)
 # list python format
 
 
+# General Note: If feeding directly from Pandas to an AI model , the libraries using like psykitlearn, carras, pytorch are going to be able to handle pandas dataframe objects, but if using a more custom implementation or library that doesnt support this useful to get them into a different format
+
 
 
 
