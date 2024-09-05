@@ -133,6 +133,9 @@ print("4th Row Index, First Item")
 # Actually the 5th row
 print(wine_df.iloc[4,0])
 
+print("All columns, row index 4")
+print(wine_df.iloc[4,:])
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
