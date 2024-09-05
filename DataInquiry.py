@@ -24,6 +24,7 @@ wine_df = pd.read_csv("winequality-white.csv", sep=";")
 print(wine_df.head())
 
 
+# Printing Column Methods Useful for Large CSV files
 # Print the Columns (method 1)
 # Displays features of dataset
 # using pandas dataframe index object returned
@@ -38,7 +39,11 @@ print("Columns as a List")
 print(list(wine_df.columns))
 
 
-
+# Describe the Data
+# Describe function on the dataframe 
+# Give Columns, Count, Mean, Standard Deviation, Max Value, Min Value, Quartile  
+print("Describe the Data")
+print(wine_df.describe())
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
