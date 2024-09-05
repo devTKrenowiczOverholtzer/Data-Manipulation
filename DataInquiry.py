@@ -144,6 +144,13 @@ print(wine_df.loc[wine_df["quality"] > 5])
 # locating all instances where quality > 5 is true
 # getting the entire dataframe back 
 
+# use length property of the index of the subdata frame
+print("How many rows is this?")
+print(len(wine_df.loc[wine_df["quality"] > 5].index))
+#length function
+#index gives us row count 
+
+
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
