@@ -40,10 +40,26 @@ print(list(wine_df.columns))
 
 
 # Describe the Data
-# Describe function on the dataframe 
-# Give Columns, Count, Mean, Standard Deviation, Max Value, Min Value, Quartile  
+# Describe function on the dataframe
+# Give Columns, Count, Mean, Standard Deviation, Max Value, Min Value, Quartile
 print("Describe the Data")
 print(wine_df.describe())
+
+
+# Indexing
+# Indexing Data
+# Take dataframe and generate useful subsets of dataframes
+# Filtering Data
+# Return a series object (Filtered View of Pandas Dataframe)
+# Return a series with only the "quality" column of dataset
+quality_series = wine_df['quality']
+# quality_series user named variable, using dataframe bracket notation ['<column name>']
+print("Quality Series")
+print(quality_series)
+
+# multiple columns
+# can convert this into a list and do multiple column names
+# quality_series = wine_df['<column name, column name list>']
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
