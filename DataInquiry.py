@@ -210,6 +210,18 @@ import matplotlib.pyplot as plt
 # matlab has plotting library very common to use in python 
 import seaborn as sns
 
+# Correlation
+# See how much these variables are correlated
+print(wine_df.corr())
+# corr function will input correlation matrix
+# plot it using heat map
+plot = sns.heatmap(wine_df.corr())
+# pop it up in terminal 
+# using jupityr notebook probably dont have to call this
+plt.show()
+# clear plot
+plt.clf()
+
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
