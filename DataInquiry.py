@@ -89,11 +89,15 @@ print(wine_df.loc[:, "quality"])
 # using normal slicing notation [:]
 # : substituion for everything
 # Want all rows, and just the quality column
-
+# Series Object
 
 # Using .iloc
 # If slicing on .iloc it is end exclusive
 
+# Get first Quality Value
+print("First Quality Value")
+print(wine_df.loc[0, "quality"])
+# first row which is index 0
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
