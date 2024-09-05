@@ -10,6 +10,12 @@
 # import <libraryname> as <alias>
 import pandas as pd
 
+# Read dataset into the dataframe variable "wine_df"
+# dataframes: how things in Pandas are represented 
+wine_df = pd.read_csv("winequality-white.csv", sep=";")
+#using pandas function read csv using separator argument 
+#csv doesn't use standard seperators (uses ; instead of standard , separators)
+
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
