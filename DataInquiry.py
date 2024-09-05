@@ -212,15 +212,22 @@ import seaborn as sns
 
 # Correlation
 # See how much these variables are correlated
-print(wine_df.corr())
+##print(wine_df.corr())
 # corr function will input correlation matrix
 # plot it using heat map
-plot = sns.heatmap(wine_df.corr())
+##plot = sns.heatmap(wine_df.corr())
 # pop it up in terminal 
 # using jupityr notebook probably dont have to call this
-plt.show()
+##plt.show()
 # clear plot
+##plt.clf()
+
+#Scatter
+# look at quality with correlation of alchol
+plt.scatter(wine_df["quality"], wine_df["alcohol"])
+plt.show()
 plt.clf()
+# matlab has all sorts of parameters can be set, change title, x,y axis
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
