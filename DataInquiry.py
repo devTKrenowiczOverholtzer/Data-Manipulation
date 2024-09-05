@@ -106,6 +106,12 @@ print("1-5 (first and up to fifth) indexed quality value")
 print(wine_df.loc[0:5, "quality"])
 # end inclusive so it gives 6 values index 0-5
 
+#Another Slice Method
+print("Everything before and up to the fifth indexed quality value")
+print(wine_df.loc[:5,'quality'])
+# :5 everything and up to 5
+
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
