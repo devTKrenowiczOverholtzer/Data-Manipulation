@@ -99,6 +99,13 @@ print("First Quality Value")
 print(wine_df.loc[0, "quality"])
 # first row which is index 0
 
+# Slice
+# Get Multiple values for each index
+# Going to Slice
+print("1-5 (first and up to fifth) indexed quality value")
+print(wine_df.loc[0:5, "quality"])
+# end inclusive so it gives 6 values index 0-5
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
