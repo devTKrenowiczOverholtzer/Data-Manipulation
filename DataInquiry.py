@@ -25,8 +25,21 @@ print(wine_df.head())
 
 
 # Print the Columns (method 1)
+# Displays features of dataset
+# using pandas dataframe index object returned
 print("Columns Index")
 print(wine_df.columns)
+
+# Print the Columns (method 2)
+# returns columns as Python list object
+# may want python list object instead of pandas index object depending on what is used or working outside of pandas
+# wrapped list function will convert index into a list
+print("Columns as a List")
+print(list(wine_df.columns))
+
+
+
+
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
