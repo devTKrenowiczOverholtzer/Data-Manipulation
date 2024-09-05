@@ -62,6 +62,19 @@ print(quality_series)
 # quality_series = wine_df['<column name, column name list>']
 
 
+# Indexing
+# return a list with the quality column dataset
+# grabbing the values out of the series <.values> and converting it to a python list <.tolist()>
+quality_list = wine_df['quality'].values.tolist()
+print("Quality List")
+print(quality_list)
+# list python format
+
+
+
+
+
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
