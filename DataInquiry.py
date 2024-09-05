@@ -165,6 +165,20 @@ print(len(sub_df.index))
 # function to reset the index 
 # sub_df.reset.index() 
 
+# Handling Missing Data
+# Data Entry, Blank Space in Column or Row
+# AI technique can sometimes handle a missing entry in column or row
+# Find them, handle them - may want to take out column or row or fill the data 
+
+# Data set doesnt have any missing values 
+# way to look at that using isna()
+print(wine_df.isna())
+# Way to get our counts of our na values is using the value counts property 
+print(wine_df.isna().value_counts())
+# prints out number of true or false values per column
+# only false so everything has a value- total count for each false value is size of data set
+
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
