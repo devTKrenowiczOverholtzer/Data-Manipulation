@@ -150,7 +150,20 @@ print(len(wine_df.loc[wine_df["quality"] > 5].index))
 #length function
 #index gives us row count 
 
+# for conditional expressions you can use the and symbol and the pipe symbol for or to combine conditions into different expressions
+# if your going to do that make sure you have () around subconditions
 
+# Make a more restricted veiw 
+print("All rows where quality is above 5 and sulphates are above 0.45")
+sub_df = wine_df.loc[(wine_df["quality"]>5) & (wine_df["sulphates"]<0.45)]
+print(sub_df.head())
+print(len(sub_df.index))
+# set equal to a subdata frame <sub_df> 
+# will create a copy of dataframe
+
+# when have new dataframe will not automatically reset your index so if your using an indexing method in Pandas can cause issues
+# function to reset the index 
+# sub_df.reset.index() 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
