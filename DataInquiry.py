@@ -17,6 +17,12 @@ wine_df = pd.read_csv("winequality-white.csv", sep=";")
 #csv doesn't use standard seperators (uses ; instead of standard , separators)
 
 
+# Get overview of Data
+# Use function head
+# Gives summary of dataset, first 5 rows
+# If using googlecolab print statment unnecessary
+print(wine_df.head())
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
