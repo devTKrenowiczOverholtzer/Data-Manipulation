@@ -128,6 +128,11 @@ print(wine_df.loc[4890:, ["quality","sulphates"]])
 print("Row Indexes 1-2 and Column Indexes 1-4")
 print(wine_df.iloc[1:3,1:5]) 
 
+# index with single number 
+print("4th Row Index, First Item")
+# Actually the 5th row
+print(wine_df.iloc[4,0])
+
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
