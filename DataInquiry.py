@@ -52,7 +52,7 @@ print(wine_df.describe())
 # Filtering Data
 # Return a series object (Filtered View of Pandas Dataframe)
 # Return a series with only the "quality" column of dataset
-quality_series = wine_df['quality']
+quality_series = wine_df["quality"]
 # quality_series user named variable, using dataframe bracket notation ['<column name>']
 print("Quality Series")
 print(quality_series)
@@ -65,7 +65,7 @@ print(quality_series)
 # Indexing
 # return a list with the quality column dataset
 # grabbing the values out of the series <.values> and converting it to a python list <.tolist()>
-quality_list = wine_df['quality'].values.tolist()
+quality_list = wine_df["quality"].values.tolist()
 print("Quality List")
 print(quality_list)
 # list python format
@@ -108,8 +108,13 @@ print(wine_df.loc[0:5, "quality"])
 
 #Another Slice Method
 print("Everything before and up to the fifth indexed quality value")
-print(wine_df.loc[:5,'quality'])
+print(wine_df.loc[:5,"quality"])
 # :5 everything and up to 5
+
+#Slice After Index Value
+print("Everything after the 4890th indexed quality value")
+print(wine_df.loc[4890:, "quality"])
+
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
