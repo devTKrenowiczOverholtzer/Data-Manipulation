@@ -187,6 +187,9 @@ new_df = wine_df
 new_df.loc[0, "quality"] = None
 print(new_df.loc[0,"quality"])
 
+print("New Missing Value Counts")
+print(new_df.isna().value_counts())
+
 # Drop the NaN
 print("Number of Rows before dropping NaN")
 print(len(new_df.index))
