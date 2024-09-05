@@ -208,6 +208,8 @@ print(cleaned_df.loc[0,"quality"])
 # import data visualization libraries 
 import matplotlib.pyplot as plt
 # matlab has plotting library very common to use in python 
+import seaborn as sns
+
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
