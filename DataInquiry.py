@@ -73,8 +73,26 @@ print(quality_list)
 
 # General Note: If feeding directly from Pandas to an AI model , the libraries using like psykitlearn, carras, pytorch are going to be able to handle pandas dataframe objects, but if using a more custom implementation or library that doesnt support this useful to get them into a different format
 
+# Using .loc
+# Method indexing dataframe
+# Label based
+# Can select different rows and columns
+# Columns are generally selected by label
+# Can pass conditions into location
+# When using row and column indexers order is row x column if having to specify both
+# Are different situations in which pass either row or column, don't have to specify both
+# If slicing on .loc it is end inclusive
+# Get everything in quality column
+print("Entire Quality Column")
+print(wine_df.loc[:, "quality"])
+# notation df.loc[row, column]
+# using normal slicing notation [:]
+# : substituion for everything
+# Want all rows, and just the quality column
 
 
+# Using .iloc
+# If slicing on .iloc it is end exclusive
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
