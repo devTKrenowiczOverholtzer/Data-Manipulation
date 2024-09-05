@@ -76,6 +76,7 @@ print(quality_list)
 # Using .loc
 # Method indexing dataframe
 # Label based
+# indexing based on feature name using loc property of dataframe
 # Can select different rows and columns
 # Columns are generally selected by label
 # Can pass conditions into location
@@ -90,9 +91,6 @@ print(wine_df.loc[:, "quality"])
 # : substituion for everything
 # Want all rows, and just the quality column
 # Series Object
-
-# Using .iloc
-# If slicing on .iloc it is end exclusive
 
 # Get first Quality Value
 print("First Quality Value")
@@ -119,6 +117,16 @@ print(wine_df.loc[4890:, "quality"])
 print("Everything after the 4890th indexed quality and sulfates value")
 print(wine_df.loc[4890:, ["quality","sulphates"]])
 
+
+# Using iloc
+# works on numeric indexing instead of label indexing
+# If slicing end exclusive (number we put at end of slice is not going to be included)
+# using indexes for both rows and columns
+
+# Subset of dataframe
+# Slice
+print("Row Indexes 1-2 and Column Indexes 1-4")
+print(wine_df.iloc[1:3,1:5]) 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
