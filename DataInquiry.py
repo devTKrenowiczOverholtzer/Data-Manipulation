@@ -115,6 +115,9 @@ print(wine_df.loc[:5,"quality"])
 print("Everything after the 4890th indexed quality value")
 print(wine_df.loc[4890:, "quality"])
 
+#List to Get More Than One Column on Slice
+print("Everything after the 4890th indexed quality and sulfates value")
+print(wine_df.loc[4890:, ["quality","sulphates"]])
 
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
