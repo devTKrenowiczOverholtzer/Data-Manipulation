@@ -187,8 +187,18 @@ new_df = wine_df
 new_df.loc[0, "quality"] = None
 print(new_df.loc[0,"quality"])
 
-
-
+# Drop the NaN
+print("Number of Rows before dropping NaN")
+print(len(new_df.index))
+cleaned_df =  new_df.dropna()
+# going to drop the NaN value and not reset the index
+# want a brand new dataframe with its own fresh index 
+cleaned_df.reset_index(inplace=True)
+# also creating a copy so we can reset this function back to the clean dataframe or we can use optional function keywords such as do this in place so we dont have to reset again
+print("Number of Rows after dropping NaN")
+print(len(cleaned_df.index))
+# what had been set to NaN location 
+print(cleaned_df.loc[0,"quality"])
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
 # CODE CONTRIBUTOR: Mary Everett, University of Idaho PHD
