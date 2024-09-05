@@ -178,6 +178,16 @@ print(wine_df.isna().value_counts())
 # prints out number of true or false values per column
 # only false so everything has a value- total count for each false value is size of data set
 
+# Insert a Non-number (NaN) Value
+# Get first column value in dataframe
+print(wine_df.loc[0, "quality"])
+# Create New Dataframe so dont screw up anything
+new_df = wine_df
+# Grab First quality score in new dataframe and set to python keyword none to create NaN
+new_df.loc[0, "quality"] = None
+print(new_df.loc[0,"quality"])
+
+
 
 #--------------------------------RESOURCES AND REFERENCES-------------------
 # DATASET: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.Modeling wine preferences by data mining from physicochemical properties.In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236
